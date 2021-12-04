@@ -2,29 +2,31 @@
   "doc_type": "pipeline",
   "version": "3.0",
   "json_schema": "http://api.dataplatform.ibm.com/schemas/common-pipeline/pipeline-flow/pipeline-flow-v3-schema.json",
-  "id": "b5c79378-5492-4554-a627-f1ab8933ee38",
-  "primary_pipeline": "5c06d72c-068c-4ae2-8696-518280b1a075",
+  "id": "b0fb4daa-b231-4e40-88c0-1f606064f889",
+  "primary_pipeline": "959a3524-e27f-4888-9b03-623b9dae2cb1",
   "pipelines": [
     {
-      "id": "5c06d72c-068c-4ae2-8696-518280b1a075",
+      "id": "959a3524-e27f-4888-9b03-623b9dae2cb1",
       "nodes": [
         {
-          "id": "d2e816ce-0cc8-4d48-84fa-e709d46d8496",
+          "id": "6b29c1df-c193-4b2c-acf2-8219848f9439",
           "type": "execution_node",
           "op": "execute-r-node",
           "app_data": {
-            "filename": "r.r",
+            "filename": "fetch_data.r",
             "runtime_image": "jupyter/r-notebook",
             "include_subdirectories": false,
-            "invalidNodeError": null,
-            "outputs": [],
+            "outputs": [
+              "data/dat.csv"
+            ],
             "env_vars": [],
             "dependencies": [],
+            "invalidNodeError": null,
             "ui_data": {
-              "label": "r.r",
+              "label": "fetch_data.r",
               "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%22724%22%20height%3D%22561%22%20viewBox%3D%220%200%20724%20561%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22gradientFill-1%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%20gradientUnits%3D%22objectBoundingBox%22%20spreadMethod%3D%22pad%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(203%2C206%2C208)%22%20stop-opacity%3D%221%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgb(132%2C131%2C139)%22%20stop-opacity%3D%221%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22gradientFill-2%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%20gradientUnits%3D%22objectBoundingBox%22%20spreadMethod%3D%22pad%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(39%2C109%2C195)%22%20stop-opacity%3D%221%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgb(22%2C92%2C170)%22%20stop-opacity%3D%221%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cpath%20d%3D%22M361.453%2C485.937%20C162.329%2C485.937%200.906%2C377.828%200.906%2C244.469%20C0.906%2C111.109%20162.329%2C3.000%20361.453%2C3.000%20C560.578%2C3.000%20722.000%2C111.109%20722.000%2C244.469%20C722.000%2C377.828%20560.578%2C485.937%20361.453%2C485.937%20ZM416.641%2C97.406%20C265.289%2C97.406%20142.594%2C171.314%20142.594%2C262.484%20C142.594%2C353.654%20265.289%2C427.562%20416.641%2C427.562%20C567.992%2C427.562%20679.687%2C377.033%20679.687%2C262.484%20C679.687%2C147.971%20567.992%2C97.406%20416.641%2C97.406%20Z%22%20fill%3D%22url(%23gradientFill-1)%22%20fill-rule%3D%22evenodd%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M550.000%2C377.000%20C550.000%2C377.000%20571.822%2C383.585%20584.500%2C390.000%20C588.899%2C392.226%20596.510%2C396.668%20602.000%2C402.500%20C607.378%2C408.212%20610.000%2C414.000%20610.000%2C414.000%20L696.000%2C559.000%20L557.000%2C559.062%20L492.000%2C437.000%20C492.000%2C437.000%20478.690%2C414.131%20470.500%2C407.500%20C463.668%2C401.969%20460.755%2C400.000%20454.000%2C400.000%20C449.298%2C400.000%20420.974%2C400.000%20420.974%2C400.000%20L421.000%2C558.974%20L298.000%2C559.026%20L298.000%2C152.938%20L545.000%2C152.938%20C545.000%2C152.938%20657.500%2C154.967%20657.500%2C262.000%20C657.500%2C369.033%20550.000%2C377.000%20550.000%2C377.000%20ZM496.500%2C241.024%20L422.037%2C240.976%20L422.000%2C310.026%20L496.500%2C310.002%20C496.500%2C310.002%20531.000%2C309.895%20531.000%2C274.877%20C531.000%2C239.155%20496.500%2C241.024%20496.500%2C241.024%20Z%22%20fill%3D%22url(%23gradientFill-2)%22%20fill-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A",
-              "x_pos": 270,
-              "y_pos": 291,
+              "x_pos": 50,
+              "y_pos": 50,
               "description": "R Script"
             }
           },
@@ -58,11 +60,11 @@
           ]
         },
         {
-          "id": "fbe8286a-b64d-4881-aaaf-65ed12f96fe0",
+          "id": "4f68a9d5-a3c4-4232-9a5b-68c79d6629e8",
           "type": "execution_node",
           "op": "execute-notebook-node",
           "app_data": {
-            "filename": "pandas.ipynb",
+            "filename": "read_from_r.ipynb",
             "runtime_image": "continuumio/anaconda3:2020.07",
             "env_vars": [],
             "include_subdirectories": false,
@@ -70,10 +72,10 @@
             "outputs": [],
             "dependencies": [],
             "ui_data": {
-              "label": "pandas.ipynb",
+              "label": "read_from_r.ipynb",
               "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
-              "x_pos": 656,
-              "y_pos": 311,
+              "x_pos": 290,
+              "y_pos": 49,
               "description": "Notebook file"
             }
           },
@@ -91,8 +93,8 @@
               },
               "links": [
                 {
-                  "id": "92a67aa7-34b9-4825-af8d-c46a512fa863",
-                  "node_id_ref": "d2e816ce-0cc8-4d48-84fa-e709d46d8496",
+                  "id": "d863ffcd-4ea3-4436-b978-9c8683651e45",
+                  "node_id_ref": "6b29c1df-c193-4b2c-acf2-8219848f9439",
                   "port_id_ref": "outPort"
                 }
               ]
