@@ -4,7 +4,8 @@ Amp = strtod(args(3));
 Freq = strtod(args(4)); 
 
 // load the blocks library and the simulation engine
-loadXcosLibs(); loadScicos();
+//loadXcosLibs();
+loadScicos();
 
 importXcosDiagram("models/scilab_sine.zcos")
 
