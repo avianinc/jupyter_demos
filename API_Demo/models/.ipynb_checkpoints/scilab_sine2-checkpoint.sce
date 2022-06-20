@@ -6,7 +6,7 @@ Freq = strtod(args(4));
 // load the blocks library and the simulation engine
 loadXcosLibs(); loadScicos();
 
-importXcosDiagram("C:/Users/jdehart/OneDrive - AVIAN/Documents/GitHub/jupyter_demos/API_Demo/models/scilab_sine.zcos")
+importXcosDiagram("models/scilab_sine.zcos")
 
 typeof(scs_m) //The diagram data structure
 

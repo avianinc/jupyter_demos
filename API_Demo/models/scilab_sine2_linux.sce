@@ -3,10 +3,14 @@ args=sciargs();
 Amp = strtod(args(3)); 
 Freq = strtod(args(4)); 
 
-// load the blocks library and the simulation engine
-loadXcosLibs(); loadScicos();
+//Amp = 1; 
+//Freq = 3; 
 
-importXcosDiagram("models/scilab_sine.zcos")
+// load the blocks library and the simulation engine
+//loadXcosLibs();
+loadScicos();
+
+importXcosDiagram("/root/jupyter_demos/API_Demo/models/scilab_sine.zcos")
 
 typeof(scs_m) //The diagram data structure
 
