@@ -1,0 +1,36 @@
+{
+    "fruits": {
+        "apples": 10,
+        "oranges": 20,
+        "bananas": 15
+    },
+    "vegetables": [
+        "carrots",
+        "celery",
+        "lettuce"
+    ],
+    "desserts": {
+        "cakes": {
+            "chocolate": {
+                "price": 10,
+                "calories": 500
+            },
+            "vanilla": {
+                "price": 8,
+                "calories": 400
+            }
+        },
+        "pies": [
+            {
+                "flavor": "apple",
+                "price": 12,
+                "calories": 600
+            },
+            {
+                "flavor": "pumpkin",
+                "price": 15,
+                "calories": 700
+            }
+        ]
+    }
+}

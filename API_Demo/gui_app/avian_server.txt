@@ -1,0 +1,6 @@
+Server IP: 18.205.77.131
+Server Port: 8111
+Auth Key: amRlaGFydDpqa2QyMjE0
+Workspace: Mission Demos
+Model: Model 1
+Instance: Instance 1
