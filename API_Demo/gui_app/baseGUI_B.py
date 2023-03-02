@@ -26,8 +26,8 @@ class App:
         self.auth_key_entry = tk.Entry(self.server_info_frame)
         self.auth_key_entry.grid(row=3, column=1, sticky="w", pady=2)
         self.connect_button = tk.Button(self.server_info_frame, text="Connect", command=self.connect)
-        self.connect_button.grid(row=4, column=0, columnspan=2, pady=5)
-        self.connect_indicator = tk.Label(self.server_info_frame, width=10, height=10, bg="gray")
+        self.connect_button.grid(row=4, column=0, columnspan=1, pady=5)
+        self.connect_indicator = tk.Label(self.server_info_frame, width=1, height=1, bg="gray")
         self.connect_indicator.grid(row=4, column=2)
 
         # Instance Info
