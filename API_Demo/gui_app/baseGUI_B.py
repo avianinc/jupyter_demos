@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+
+TWC and Intsance interfacing demonstration: This tool demonstartes 
+communicationswith Cameos Teamwork Cloud API and interrogating an 
+instance. The instance can be reviewed and written to disk according 
+to the needs of the simulation toolset.
+
+Author: J.K. DeHart
+Date: 3/2/2023
+"""
+
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog
@@ -9,7 +22,7 @@ import json
 class App:
     def __init__(self, master):
         self.master = master
-        self.master.title("My App")
+        self.master.title("TWC API Interactions - Demo")
         self.master.geometry("800x600")
 
         # Server Info
